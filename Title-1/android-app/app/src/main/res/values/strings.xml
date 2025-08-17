@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LTE5G KPI</string>
+    <string name="collecting">Collecting KPIs…</string>
+    <string name="send">Send Now</string>
+</resources>
