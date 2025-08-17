@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LTE/5G KPI Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>LTE/5G Coverage & KPI Dashboard</h1>
+    <p>Map points = last 5000 samples. Charts = last 200 samples. Use API key if configured.</p>
+  </header>
+  <main>
+    <div id="map"></div>
+    <canvas id="kpiChart"></canvas>
+  </main>
+  <script>
+    const API_KEY = ''; // set if needed e.g., 'devkey'
+  </script>
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>
