@@ -1,0 +1,2 @@
+rootProject.name = "LTE5G-KPI"
+include ':app'
