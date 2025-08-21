@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2025-08-18T07:00:00Z",
+    "alarm_type": "LinkDown",
+    "severity": "Critical",
+    "network_element": "OLT-12",
+    "suggested_action": "Dispatch field tech to check fiber link."
+  },
+  {
+    "timestamp": "2025-08-18T07:30:00Z",
+    "alarm_type": "HighTemperature",
+    "severity": "Major",
+    "network_element": "DSLAM-21",
+    "suggested_action": "Increase cooling / check HVAC unit."
+  },
+  {
+    "timestamp": "2025-08-18T08:00:00Z",
+    "alarm_type": "MinorVoltageFluctuation",
+    "severity": "Minor",
+    "network_element": "BTS-02",
+    "suggested_action": "Monitor power supply."
+  }
+]
