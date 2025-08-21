@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NDAC Alarm</title>
+  </head>
+  <body style="font-family: Arial, sans-serif;">
+    <h2>NDAC Alarm Notification</h2>
+    <p><strong>Severity:</strong> {{ alarm.severity }}</p>
+    <p><strong>Type:</strong> {{ alarm.alarm_type }}</p>
+    <p><strong>Timestamp:</strong> {{ alarm.timestamp }}</p>
+    <p><strong>Network Element:</strong> {{ alarm.network_element }}</p>
+    <p><strong>Suggested Action:</strong> {{ alarm.suggested_action }}</p>
+    <hr>
+    <small>This message was generated automatically by the NDAC Alarm Service.</small>
+  </body>
+</html>
