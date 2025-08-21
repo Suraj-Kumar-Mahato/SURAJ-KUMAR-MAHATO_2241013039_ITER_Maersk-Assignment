@@ -1,0 +1,27 @@
+provider:
+  type: json         # json | ndac_api
+  json_path: sample_data/alarms.json
+  # ndac_api:
+  #   base_url: https://ndac.example.com/api
+  #   token_env: NDAC_API_TOKEN
+
+poll_interval_seconds: 3600
+severity_filter: ["Critical", "Major"]
+
+recipients:
+  - netops@example.com
+  - noc@example.com
+
+notifier:
+  prefer: smtp       # smtp | sendgrid
+  from_email: "ndac-alerts@example.com"
+
+smtp:
+  host: smtp.example.com
+  port: 587
+  username: "${SMTP_USER}"
+  password: "${SMTP_PASS}"
+  use_tls: true
+
+sendgrid:
+  api_key: "${SENDGRID_API_KEY}"
